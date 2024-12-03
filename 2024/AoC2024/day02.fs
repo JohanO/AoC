@@ -25,8 +25,8 @@ let check report =
     | a::b::tail when a > b -> rule Decreasing report
     | a::b::tail when a = b -> false
 
-let firstPart =
-    day02Input
+let firstPart input =
+    input
     |> List.map check
     |> List.filter (fun x -> x)
     |> List.length
@@ -40,8 +40,8 @@ let damper list =
             list |> List.removeAt i |> check ]
         |> List.exists (fun x -> x)
 
-let secondPart =
-    day02Input
+let secondPart input =
+    input
     |> List.map damper
     |> List.filter (fun x -> x)
     |> List.length
