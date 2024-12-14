@@ -1,6 +1,6 @@
 ﻿
 [<EntryPoint>]
 let main argv = 
-    day10.secondPart day10.day10Input
+    day11.secondPart day11.day11Input
     |> printfn "%A" 
     0 // return an integer exit code
