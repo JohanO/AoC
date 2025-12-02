@@ -1,11 +1,11 @@
-﻿module day10
+﻿module Year2024.Day10
 
 open System.IO
 
 type Point = { X: int; Y: int; Z: int }
 
 let day10Input = 
-    File.ReadAllLines "./input/day10.txt"
+    File.ReadAllLines "./input.txt"
     |> Array.map (fun row -> row.ToCharArray() |> Array.map (fun c -> int c - int '0'))
 
 let toPoints (input : int array array) =

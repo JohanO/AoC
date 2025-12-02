@@ -1,4 +1,4 @@
-﻿module day07
+﻿module Year2024.Day07
 
 open System
 open System.IO
@@ -7,7 +7,7 @@ type Equation = { Value: int64; Operands: int64 array }
 type Operation = Add | Mul | Con
    
 let day07Input = 
-    File.ReadAllLines "./input/day07.txt"
+    File.ReadAllLines "./input.txt"
     |> Array.map (fun a -> a.Split(':', StringSplitOptions.RemoveEmptyEntries) |> Array.toList)
     |> Array.map (fun a -> { Value = int64 a.[0]; Operands = a.[1].Split(' ', StringSplitOptions.RemoveEmptyEntries) |> Array.map int64 })
 

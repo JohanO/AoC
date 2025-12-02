@@ -1,11 +1,11 @@
-﻿module day05
+﻿module Year2024.Day05
 
 open System.IO
 
 type Rule = { First : int; Second: int; }
 
 let rules = 
-    File.ReadAllLines "./input/day05.txt"
+    File.ReadAllLines "./input.txt"
     |> Array.takeWhile (fun x -> x.Length > 0)
     |> Array.map (fun a -> a.Split("|")) |> Array.map (fun a -> { First = int a.[0]; Second = int a.[1] })
 

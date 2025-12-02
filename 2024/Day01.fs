@@ -1,10 +1,10 @@
-﻿module day01
+﻿module Year2024.Day01
 
 open System
 open System.IO
 
 let day01Input =
-    File.ReadLines("Input/Day01a.txt")
+    File.ReadLines("input.txt")
     |> Seq.map (fun s -> s.Split(' ', StringSplitOptions.RemoveEmptyEntries) |> Array.map int64)
     |> Seq.map (fun a -> a.[0], a.[1])
     |> Seq.toList

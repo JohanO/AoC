@@ -1,4 +1,4 @@
-﻿module day08
+﻿module Year2024.Day08
 
 open System.IO
 
@@ -22,7 +22,7 @@ module Array2D =
         Array2D.init height width (fun y x -> lst |> List.item y |> List.item x)
 
 let day08Input =
-    File.ReadAllLines "./input/day08.txt"
+    File.ReadAllLines "./input.txt"
     |> Array.toList
     |> List.map Seq.toList
 

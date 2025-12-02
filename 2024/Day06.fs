@@ -1,4 +1,4 @@
-﻿module day06
+﻿module Year2024.Day06
 
 open System.IO
 
@@ -6,7 +6,7 @@ type Direction = Up | Down | Left | Right
 type Position = { X : int; Y : int; Direction : Direction }
 
 let map = 
-    File.ReadAllLines "./input/day06.txt"
+    File.ReadAllLines "./input.txt"
     |> Array.map (fun a -> a.ToCharArray())
 
 let isGuard x =

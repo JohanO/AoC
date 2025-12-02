@@ -10,7 +10,19 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Compile Include="2015\Day01.fs" />
+    <Compile Include="2024\Day01.fs" />
+    <Compile Include="2024\Day02.fs" />
+    <Compile Include="2024\Day03.fs" />
+    <Compile Include="2024\Day04.fs" />
+    <Compile Include="2024\Day05.fs" />
+    <Compile Include="2024\Day06.fs" />
+    <Compile Include="2024\Day07.fs" />
+    <Compile Include="2024\Day08.fs" />
+    <Compile Include="2024\Day09.fs" />
+    <Compile Include="2024\Day10.fs" />
+    <Compile Include="2024\Day11.fs" />
     <Compile Include="2025\Day01.fs" />
+    <Compile Include="2025\Day02.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

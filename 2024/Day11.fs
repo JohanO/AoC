@@ -1,10 +1,10 @@
-﻿module day11
+﻿module Year2024.Day11
 
 open System
 open System.IO
 
 let day11Input = 
-    File.ReadAllText "./input/day11.txt"
+    File.ReadAllText "./input.txt"
     |> _.Split(" ", StringSplitOptions.RemoveEmptyEntries)
     |> Array.map int64
     |> Array.toList

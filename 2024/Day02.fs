@@ -1,11 +1,11 @@
-﻿module day02
+﻿module Year2024.Day02
 
 open System
 
 type Level = Increasing | Decreasing
 
 let day02Input =
-    System.IO.File.ReadLines("Input/Day02.txt")
+    System.IO.File.ReadLines("input.txt")
     |> Seq.map (fun s -> s.Split(' ', StringSplitOptions.RemoveEmptyEntries) |> Array.map int |> Seq.toList)
     |> Seq.toList
 
@@ -24,6 +24,7 @@ let check report =
     | a::b::tail when a < b -> rule Increasing report
     | a::b::tail when a > b -> rule Decreasing report
     | a::b::tail when a = b -> false
+    | _ -> failwith "invalid case"
 
 let firstPart input =
     input

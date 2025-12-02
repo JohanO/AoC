@@ -1,7 +1,7 @@
-﻿module day04
+﻿module Year2024.Day04
 
 let day04Input = 
-    System.IO.File.ReadAllLines "./input/day04.txt"
+    System.IO.File.ReadAllLines "./input.txt"
     |> Array.map Seq.toArray
 
 let isChar x y c =

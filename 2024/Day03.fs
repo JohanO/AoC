@@ -1,9 +1,9 @@
-﻿module day03
+﻿module Year2024.Day03
 
 open System.Text.RegularExpressions
 
 let day03Input =
-    System.IO.File.ReadAllText("Input/Day03.txt")
+    System.IO.File.ReadAllText("input.txt")
 
 let mulRx = new Regex(@"mul[\(]\d+,\d+[\)]", RegexOptions.Compiled)
 

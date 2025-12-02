@@ -1,4 +1,4 @@
-﻿module day09
+﻿module Year2024.Day09
 
 open System.IO
 
@@ -8,7 +8,7 @@ type Block =
 
 
 let day09Input =
-    File.ReadAllText "./input/day09.txt"
+    File.ReadAllText "./input.txt"
     |> _.ToCharArray()
     |> Array.map (fun c -> int c - int '0')
 
