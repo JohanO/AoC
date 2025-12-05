@@ -1,3 +1,3 @@
-﻿Year2025.Day04.part1 ()
-Year2025.Day04.part2 ()
+﻿Year2025.Day05.part1 ()
+Year2025.Day05.part2 ()
 
